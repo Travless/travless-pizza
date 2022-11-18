@@ -1,0 +1,161 @@
+/* custom fonts */
+
+@font-face {
+    font-family: 'header';
+    src: url(/src/fonts/Growland\ Bold.otf);
+}
+
+@font-face {
+    font-family: 'headline-font';
+    src: url(/src/fonts/Insanibu.ttf);
+}
+
+@font-face {
+    font-family: 'hero-font';
+    src: url(/src/fonts/steelfish\ rg.otf);
+}
+
+/* media queries */
+
+@media screen and (max-width: 1629px){
+    #praise {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 485px){
+    #pizza {
+        width: 80%;
+    }
+}
+
+/* @media screen and (max-width: 740px) {
+    #nav-bar{
+
+    }
+} */
+
+body{
+    margin: 0px;
+}
+
+/* nav bar */
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    margin: 0px;
+    background-color: #212f8a;
+    box-shadow: 1px 1px 3px black;
+}
+
+#logo {
+    min-width: 15em;
+    max-width: 20em;
+}
+
+#logo:hover {
+    filter: drop-shadow(1px 1px 3px black);
+    transition: 0.3s;
+}
+
+#praise-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#praise {
+    font-family: 'headline-font';
+    font-size: 3rem;
+    color: white;
+    background: linear-gradient(to right, #fecb4c, #fecb4c 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+#praise:hover {
+    background-position: 0 100%;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+#nav-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#menu,
+#order,
+#about-us,
+#contact {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'header';
+    color: white;
+}
+
+#contact {
+    padding-right: 10px;
+}
+
+#menu:hover,
+#order:hover,
+#about-us:hover,
+#contact:hover {
+    filter: drop-shadow(1px 1px 3px black);
+    color: #fecb4c;
+    transition: 0.3s;
+}
+
+/* body */
+
+#body-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* hero */
+
+#hero-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    background-image: url(/src/images/pexels-pixabay-301378.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#hero-statement {
+    color: white;
+    padding-left: 20px;
+    font-family: 'hero-font';
+    font-size: calc(1vw + 3rem);
+}
+
+#pizza {
+    filter: drop-shadow(1px 1px 5px black);
+}
+
+/* review and rewards */
+
+#review-and-awards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
