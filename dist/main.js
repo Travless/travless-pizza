@@ -1,0 +1,1 @@
+(()=>{const e=document.getElementById("content"),t=document.createElement("nav");t.setAttribute("id","nav-bar"),e.append(t);const n=document.createElement("div");n.setAttribute("id","logo-container"),t.append(n);const c=document.createElement("img");c.src="./images/travless-logo.svg",n.append(c)})();
