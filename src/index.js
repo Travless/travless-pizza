@@ -63,14 +63,14 @@ const pageLoad = (() => {
     bodyContainer.setAttribute('id', 'body-container');
     content.append(bodyContainer);
 
-    // hero section
-    const heroSection = document.createElement('section');
-    heroSection.append(bodyContainer);
+    // // hero section
+    // const heroSection = document.createElement('section');
+    // heroSection.append(bodyContainer);
 
     // hero container
     const heroContainer = document.createElement('div');
     heroContainer.setAttribute('id', 'hero-container');
-    heroSection.append(heroContainer);
+    bodyContainer.append(heroContainer);
 
     // hero statement
     const heroStatement = document.createElement('div');
@@ -130,6 +130,7 @@ const pageLoad = (() => {
 
     // footer
     const footer = document.createElement('footer');
+    footer.setAttribute('id', 'footer');
     content.append(footer);
     
     // social media container
@@ -178,8 +179,3 @@ const pageLoad = (() => {
     orderOnlineBtnContainer.append(orderOnlineBtn);
 
 })();
-
-
-// const working = (() => {
-//     alert('hi');
-// })();
