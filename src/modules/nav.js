@@ -54,5 +54,3 @@ const navBarLoad = () => {
 };
 
 export default navBarLoad;
-
-// export { }
