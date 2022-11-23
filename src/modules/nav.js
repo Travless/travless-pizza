@@ -31,6 +31,12 @@ const navBarLoad = () => {
     navMenu.setAttribute('id', 'nav-menu');
     nav.append(navMenu);
 
+    // home link
+    const homeLink = document.createElement('a');
+    homeLink.setAttribute('id', 'home');
+    homeLink.textContent = 'Home';
+    navMenu.append(homeLink);
+
     // menu link
     const menuLink = document.createElement('a');
     menuLink.setAttribute('id', 'menu');
@@ -42,12 +48,6 @@ const navBarLoad = () => {
     aboutUsLink.setAttribute('id', 'about-us');
     aboutUsLink.textContent = 'About Us';
     navMenu.append(aboutUsLink);
-
-    // contact link
-    const contactLink = document.createElement('a');
-    contactLink.setAttribute('id', 'contact');
-    contactLink.textContent = 'Contact';
-    navMenu.append(contactLink);
 
     return nav;
 

@@ -74,6 +74,7 @@ body{
     background-size: 200% 100%;
     background-position: 100%;
     transition: background-position 275ms ease;
+    cursor: default;
 }
 
 #praise:hover {
@@ -92,24 +93,25 @@ body{
 a {
     text-decoration: none;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 #menu,
 #about-us,
-#contact {
+#home {
     margin-left: 10px;
     margin-right: 10px;
     font-family: 'header';
     color: white;
 }
 
-#contact {
+#about-us {
     padding-right: 10px;
 }
 
 #menu:hover,
 #about-us:hover,
-#contact:hover {
+#home:hover {
     filter: drop-shadow(1px 1px 3px black);
     color: #fecb4c;
     transition: 0.3s;
@@ -272,6 +274,62 @@ a {
 #img-2,
 #img-3 {
     width: 50%;
+}
+
+/* about us */
+
+#about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    filter: drop-shadow(1px 1px 10px black);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-top: 20px;
+}
+
+#about-us-img {
+    width: 80%;
+}
+
+#about-us-title {
+    font-family: 'headline-font';
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#about-us-text {
+    font-family: 'hero-font';
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
+
+.about-us-titles {
+    font-family: 'headline-font';
+    font-size: 3.5vw;
+    text-align: center;
+    margin-top: 5vh;
+    padding: 1vh;
+}
+
+.about-us-p {
+    font-family: 'hero-font';
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+    padding: 1vh;
+}
+
+.line-space {
+    background-color: white;
+    width: 50%;
+    height: .5vh;
 }
 
 /* footer */

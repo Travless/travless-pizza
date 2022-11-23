@@ -3,7 +3,7 @@ const menuLoad = () => {
     // menu container
     const menuContainer  = document.createElement('div');
     menuContainer.setAttribute('id', 'menu-container');
-    bodyContainer.append(menuContainer);
+    // bodyContainer.append(menuContainer);
 
     // menu item class
     class Item {
@@ -24,10 +24,10 @@ const menuLoad = () => {
 
     const menuItems = [pepperoniPizza, mushroomPizza, meatLoversPizza, VeggiePizza]
 
+    let i = 0;
+
     // menu card function
     function menuCard (item) {
-
-        let i = 0;
 
         const menuCard = document.createElement('div');
         menuCard.classList.add('menu-card');
@@ -54,6 +54,7 @@ const menuLoad = () => {
         menuCard.append(itemPrice);
 
         menuContainer.append(menuCard);
+
         i++;
     }
 
