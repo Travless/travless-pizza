@@ -1,4 +1,4 @@
-export const homeLoad = () => {
+const homeLoad = () => {
     const homeContainer = document.createElement('div');
     homeContainer.setAttribute('id', 'home-container');
 
@@ -67,3 +67,5 @@ export const homeLoad = () => {
     return homeContainer;
 
 };
+
+export default homeLoad;

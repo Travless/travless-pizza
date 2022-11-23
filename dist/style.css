@@ -95,7 +95,6 @@ a {
 }
 
 #menu,
-#order,
 #about-us,
 #contact {
     margin-left: 10px;
@@ -109,7 +108,6 @@ a {
 }
 
 #menu:hover,
-#order:hover,
 #about-us:hover,
 #contact:hover {
     filter: drop-shadow(1px 1px 3px black);
