@@ -1,132 +1,87 @@
+// import { menuLoad } from "./modules/menu";
+import homeLoad from "./modules/home";
+
+// content container
+let content = document.getElementById('content');
+
+console.log(homeLoad());
+
+const navBarLoad = () => {
+
+     // navbar
+     let nav = document.createElement('nav');
+     nav.setAttribute('id', 'nav-bar');
+     content.append(nav);
+ 
+     // logo container
+     const logoContainer = document.createElement('div');
+     logoContainer.setAttribute('id', 'logo-container')
+     nav.append(logoContainer);
+ 
+     // logo
+     const logo = document.createElement('img');
+     logo.setAttribute('id', 'logo')
+     logo.src = '/src/images/travless-logo.svg';
+     logoContainer.append(logo);
+ 
+     // praise container
+     const praiseConatiner = document.createElement('div');
+     praiseConatiner.setAttribute('id', 'praise-container');
+     nav.append(praiseConatiner);
+ 
+     // praise text
+     const praise = document.createElement('div');
+     praise.setAttribute('id', 'praise');
+     praise.textContent = 'Rated Best Pizza in the Burgh for 2022!';
+     praiseConatiner.append(praise);
+ 
+     // nav menu
+     const navMenu = document.createElement('div');
+     navMenu.setAttribute('id', 'nav-menu');
+     nav.append(navMenu);
+ 
+     // menu link
+     const menu = document.createElement('a');
+     menu.setAttribute('id', 'menu');
+     menu.textContent = 'Menu';
+     navMenu.append(menu);
+ 
+     // order link
+     const order = document.createElement('a');
+     order.setAttribute('id', 'order');
+     order.textContent = 'Order';
+     navMenu.append(order);
+ 
+     // about us link
+     const aboutUs = document.createElement('a');
+     aboutUs.setAttribute('id', 'about-us');
+     aboutUs.textContent = 'About Us';
+     navMenu.append(aboutUs);
+ 
+     // contact link
+     const contact = document.createElement('a');
+     contact.setAttribute('id', 'contact');
+     contact.textContent = 'Contact';
+     navMenu.append(contact);
+ 
+}
+
 const pageLoad = (() => {
-    // content container
-    let content = document.getElementById('content');
+    //      HOME PAGE
 
-    // navbar
-    let nav = document.createElement('nav');
-    nav.setAttribute('id', 'nav-bar');
-    content.append(nav);
-
-    // logo container
-    const logoContainer = document.createElement('div');
-    logoContainer.setAttribute('id', 'logo-container')
-    nav.append(logoContainer);
-
-    // logo
-    const logo = document.createElement('img');
-    logo.setAttribute('id', 'logo')
-    logo.src = '/src/images/travless-logo.svg';
-    logoContainer.append(logo);
-
-    // praise container
-    const praiseConatiner = document.createElement('div');
-    praiseConatiner.setAttribute('id', 'praise-container');
-    nav.append(praiseConatiner);
-
-    // praise text
-    const praise = document.createElement('div');
-    praise.setAttribute('id', 'praise');
-    praise.textContent = 'Rated Best Pizza in the Burgh for 2022!';
-    praiseConatiner.append(praise);
-
-    // nav menu
-    const navMenu = document.createElement('div');
-    navMenu.setAttribute('id', 'nav-menu');
-    nav.append(navMenu);
-
-    // menu link
-    const menu = document.createElement('a');
-    menu.setAttribute('id', 'menu');
-    menu.textContent = 'Menu';
-    navMenu.append(menu);
-
-    // order link
-    const order = document.createElement('a');
-    order.setAttribute('id', 'order');
-    order.textContent = 'Order';
-    navMenu.append(order);
-
-    // about us link
-    const aboutUs = document.createElement('a');
-    aboutUs.setAttribute('id', 'about-us');
-    aboutUs.textContent = 'About Us';
-    navMenu.append(aboutUs);
-
-    // contact link
-    const contact = document.createElement('a');
-    contact.setAttribute('id', 'contact');
-    contact.textContent = 'Contact';
-    navMenu.append(contact);
-
+    navBarLoad();
+   
     // body container
     const bodyContainer = document.createElement('div');
     bodyContainer.setAttribute('id', 'body-container');
     content.append(bodyContainer);
 
-    // // hero section
-    // const heroSection = document.createElement('section');
-    // heroSection.append(bodyContainer);
+    let homeContainer= '';
+    homeLoad();
+    bodyContainer.append(homeContainer);
 
-    // hero container
-    const heroContainer = document.createElement('div');
-    heroContainer.setAttribute('id', 'hero-container');
-    bodyContainer.append(heroContainer);
-
-    // hero statement
-    const heroStatement = document.createElement('div');
-    heroStatement.setAttribute('id', 'hero-statement');
-    heroStatement.textContent = "At Travless's, we want our pizza to flavor your next favorite memory.";
-    heroContainer.append(heroStatement);
-
-    // pizza logo
-    const pizzaContainer = document.createElement('div');
-    pizzaContainer.setAttribute('id', 'pizza-container');
-    heroContainer.append(pizzaContainer);
-    const pizzaImg = document.createElement('img');
-    pizzaImg.src = '/src/images/pizza-half.png';
-    pizzaImg.setAttribute('id', 'pizza');
-    pizzaContainer.append(pizzaImg);
-
-    // reviews and award container
-    const reviewsAwardContainer = document.createElement('div');
-    reviewsAwardContainer.setAttribute('id', 'review-and-awards-container');
-    bodyContainer.append(reviewsAwardContainer);
-
-    // review 1 container
-    const review1Container = document.createElement('div');
-    review1Container.setAttribute('id', 'review-1-container');
-    reviewsAwardContainer.append(review1Container);
-
-    // review 1
-    const review1 = document.createElement('div');
-    review1.setAttribute('id', 'review-1');
-    review1.textContent = `"You just can't beat Travless's when it comes to pizza in the 412"`;
-    review1Container.append(review1);
-    const pittMag = document.createElement('img');
-    pittMag.setAttribute('id', 'pitt-mag');
-    pittMag.src = '/src/images/Pittsburgh_Magazine_logo.png';
-    review1Container.append(pittMag);
-
-    // award
-    const award = document.createElement('img');
-    award.setAttribute('id', 'award');
-    award.src = '/src/images/Best-Restaurant-Award-logo.png';
-    reviewsAwardContainer.append(award);
-
-    // review 2 container
-    const review2Container = document.createElement('div');
-    review2Container.setAttribute('id', 'review-2-container');
-    reviewsAwardContainer.append(review2Container);
-
-    // review 2
-    const review2 = document.createElement('div');
-    review2.setAttribute('id', 'review-2');
-    review2.textContent = '"A Pittsburgh staple!"'
-    review2Container.append(review2);
-    const trib = document.createElement('img');
-    trib.setAttribute('id', 'trib');
-    trib.src = '/src/images/TribLIVELogo.png';
-    review2Container.append(trib);
+    // bodyContainer.append(heroContainer);
+    // bodyContainer.append(reviewsAwardContainer);
 
     // footer
     const footer = document.createElement('footer');
@@ -178,4 +133,81 @@ const pageLoad = (() => {
     orderOnlineBtn.textContent = 'Order Online';
     orderOnlineBtnContainer.append(orderOnlineBtn);
 
+
+    // menu
+    const menuLoad = () => {
+
+        // menu container
+        const menuContainer  = document.createElement('div');
+        menuContainer.setAttribute('id', 'menu-container');
+        bodyContainer.append(menuContainer);
+    
+        // menu item class
+        class Item {
+    
+            constructor(imgFile, name, description, price){
+            this.imgFile = imgFile
+            this.name = name
+            this.description = description
+            this.price = price
+            }
+        };
+    
+        // creating menu items
+        const pepperoniPizza = new Item ('/src/images/pepperoni-pizza.png','Pepperoni Pizza', 'Includes pepperoni, tomato sauce, and mozzorella cheese', '$10.00');
+        const mushroomPizza = new Item ('/src/images/mushroom-pizza.png', 'Buffalo Chicken Pizza', 'Includes grilled chicken, buffalo sauce, mozzorella cheese and Ranch drizzle', '$12.00');
+        const meatLoversPizza = new Item ('/src/images/meat-lovers-pizza.png', 'Meat Lovers Pizza', 'Includes pepperoni, sausage, spicy tomato sauce, and a three cheese blend', '$13.00');
+        const VeggiePizza = new Item ('/src/images/veggie-pizza.png', 'Veggie Lovers Pizza', 'Includes red, green, and bell peppers, onions, tomato sauce, and mozzorella cheese', '$11.00');
+    
+        const menuItems = [pepperoniPizza, mushroomPizza, meatLoversPizza, VeggiePizza]
+    
+        // menu card function
+        function menuCard (item) {
+
+            let i = 0;
+    
+            const menuCard = document.createElement('div');
+            menuCard.classList.add('menu-card');
+    
+            const itemImg = document.createElement('img');
+            itemImg.src = item.imgFile;
+            itemImg.classList.add('item-img');
+            itemImg.setAttribute('id', `img-${i}`);
+            menuCard.append(itemImg);
+    
+            const itemTitle = document.createElement('div');
+            itemTitle.textContent = item.name;
+            itemTitle.classList.add('item-title');
+            menuCard.append(itemTitle);
+    
+            const itemDescription = document.createElement('div');
+            itemDescription.textContent = item.description;
+            itemDescription.classList.add('item-description');
+            menuCard.append(itemDescription);
+    
+            const itemPrice = document.createElement('div');
+            itemPrice.textContent = item.price;
+            itemPrice.classList.add('item-price');
+            menuCard.append(itemPrice);
+    
+            menuContainer.append(menuCard);
+            i++;
+        }
+    
+        for(let i = 0; i < menuItems.length; i++){
+            menuCard(menuItems[i]);
+        }
+    
+        return menuContainer;
+    
+    };
+
+
+    menu.addEventListener('click', function(event){
+        bodyContainer.innerHTML = '';
+        menuLoad();
+        // bodyContainer.append(menuContainer);
+    })
+
 })();
+
