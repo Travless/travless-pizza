@@ -17,10 +17,10 @@ const menuLoad = () => {
     };
 
     // creating menu items
-    const pepperoniPizza = new Item ('/src/images/pepperoni-pizza.png','Pepperoni Pizza', 'Includes pepperoni, tomato sauce, and mozzorella cheese', '$10.00');
-    const mushroomPizza = new Item ('/src/images/mushroom-pizza.png', 'Buffalo Chicken Pizza', 'Includes grilled chicken, buffalo sauce, mozzorella cheese and Ranch drizzle', '$12.00');
-    const meatLoversPizza = new Item ('/src/images/meat-lovers-pizza.png', 'Meat Lovers Pizza', 'Includes pepperoni, sausage, spicy tomato sauce, and a three cheese blend', '$13.00');
-    const VeggiePizza = new Item ('/src/images/veggie-pizza.png', 'Veggie Lovers Pizza', 'Includes red, green, and bell peppers, onions, tomato sauce, and mozzorella cheese', '$11.00');
+    const pepperoniPizza = new Item ('./images/pepperoni-pizza.png','Pepperoni Pizza', 'Includes pepperoni, tomato sauce, and mozzorella cheese', '$10.00');
+    const mushroomPizza = new Item ('./images/mushroom-pizza.png', 'Buffalo Chicken Pizza', 'Includes grilled chicken, buffalo sauce, mozzorella cheese and Ranch drizzle', '$12.00');
+    const meatLoversPizza = new Item ('./images/meat-lovers-pizza.png', 'Meat Lovers Pizza', 'Includes pepperoni, sausage, spicy tomato sauce, and a three cheese blend', '$13.00');
+    const VeggiePizza = new Item ('./images/veggie-pizza.png', 'Veggie Lovers Pizza', 'Includes red, green, and bell peppers, onions, tomato sauce, and mozzorella cheese', '$11.00');
 
     const menuItems = [pepperoniPizza, mushroomPizza, meatLoversPizza, VeggiePizza]
 

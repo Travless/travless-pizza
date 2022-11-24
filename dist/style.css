@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: 'header';
-    src: url(/src/fonts/Growland\ Bold.otf);
+    src: url(./fonts/Growland\ Bold.otf);
 }
 
 @font-face {
     font-family: 'headline-font';
-    src: url(/src/fonts/Insanibu.ttf);
+    src: url(./fonts/Insanibu.ttf);
 }
 
 @font-face {
     font-family: 'hero-font';
-    src: url(/src/fonts/steelfish\ rg.otf);
+    src: url(./fonts/steelfish\ rg.otf);
 }
 
 /* media queries */
@@ -123,7 +123,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    background-image: url(/src/images/pexels-pixabay-301378.jpg);
+    background-image: url(./images/pexels-pixabay-301378.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }

@@ -19,7 +19,7 @@ const homeLoad = () => {
     pizzaContainer.setAttribute('id', 'pizza-container');
     heroContainer.append(pizzaContainer);
     const pizzaImg = document.createElement('img');
-    pizzaImg.src = '/src/images/pizza-half.png';
+    pizzaImg.src = './images/pizza-half.png';
     pizzaImg.setAttribute('id', 'pizza');
     pizzaContainer.append(pizzaImg);
 
@@ -40,13 +40,13 @@ const homeLoad = () => {
     review1Container.append(review1);
     const pittMag = document.createElement('img');
     pittMag.setAttribute('id', 'pitt-mag');
-    pittMag.src = '/src/images/Pittsburgh_Magazine_logo.png';
+    pittMag.src = './images/Pittsburgh_Magazine_logo.png';
     review1Container.append(pittMag);
 
     // award
     const award = document.createElement('img');
     award.setAttribute('id', 'award');
-    award.src = '/src/images/Best-Restaurant-Award-logo.png';
+    award.src = './images/Best-Restaurant-Award-logo.png';
     reviewsAwardContainer.append(award);
 
     // review 2 container
@@ -61,7 +61,7 @@ const homeLoad = () => {
     review2Container.append(review2);
     const trib = document.createElement('img');
     trib.setAttribute('id', 'trib');
-    trib.src = '/src/images/TribLIVELogo.png';
+    trib.src = './images/TribLIVELogo.png';
     review2Container.append(trib);
 
     return homeContainer;

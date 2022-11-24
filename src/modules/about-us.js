@@ -8,7 +8,7 @@ const aboutUsLoad = () => {
     // about us img
     const aboutUsImg = document.createElement('img');
     aboutUsImg.setAttribute('id', 'about-us-img');
-    aboutUsImg.src = '/src/images/pizzeria-header.webp';
+    aboutUsImg.src = './images/pizzeria-header.webp';
     aboutUsContainer.append(aboutUsImg);
 
     // about us header
