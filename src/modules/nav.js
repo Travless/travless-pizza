@@ -12,7 +12,7 @@ const navBarLoad = () => {
     // logo
     const logo = document.createElement('img');
     logo.setAttribute('id', 'logo')
-    logo.src = './images/travless-logo.svg';
+    logo.src = '/dist/images/travless-logo.svg';
     logoContainer.append(logo);
 
     // praise container

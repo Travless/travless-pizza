@@ -23,19 +23,19 @@ const footerLoad = () => {
     // twitter
     const twitter = document.createElement('img');
     twitter.setAttribute('id', 'twitter');
-    twitter.src = './images/social/icon-twitter.svg';
+    twitter.src = '/dist/images/social/icon-twitter.svg';
     socialMediaLogos.append(twitter);
 
     // instagram
     const instagram = document.createElement('img');
     instagram.setAttribute('id', 'instagram');
-    instagram.src = './images/social/icon-instagram.svg';
+    instagram.src = '/dist/images/social/icon-instagram.svg';
     socialMediaLogos.append(instagram);
 
     // facebook
     const facebook = document.createElement('img');
     facebook.setAttribute('id', 'facebook');
-    facebook.src = './images/social/icon-facebook.svg';
+    facebook.src = '/dist/images/social/icon-facebook.svg';
     socialMediaLogos.append(facebook);
 
     // order online button container
