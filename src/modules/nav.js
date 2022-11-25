@@ -1,3 +1,5 @@
+import Logo from '../images/travless-logo.svg';
+
 const navBarLoad = () => {
 
     // navbar
@@ -9,10 +11,16 @@ const navBarLoad = () => {
     logoContainer.setAttribute('id', 'logo-container')
     nav.append(logoContainer);
 
+    // // logo
+    // const logo = document.createElement('img');
+    // logo.setAttribute('id', 'logo')
+    // logo.src = '/src/images/travless-logo.svg';
+    // logoContainer.append(logo);
+
     // logo
-    const logo = document.createElement('img');
-    logo.setAttribute('id', 'logo')
-    logo.src = '/dist/images/travless-logo.svg';
+    const logo = new Image();
+    logo.src = Logo;
+    logo.setAttribute('id', 'logo');
     logoContainer.append(logo);
 
     // praise container

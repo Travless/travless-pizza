@@ -1,3 +1,5 @@
+import AboutUsImg from '../images/pizzeria-header.webp';
+
 const aboutUsLoad = () => {
     
     // about us container
@@ -5,10 +7,16 @@ const aboutUsLoad = () => {
     aboutUsContainer.setAttribute('id', 'about-us-container');
     // bodyContainer.append(aboutUsContainer);
 
+    // // about us img
+    // const aboutUsImg = document.createElement('img');
+    // aboutUsImg.setAttribute('id', 'about-us-img');
+    // aboutUsImg.src = '/src/images/pizzeria-header.webp';
+    // aboutUsContainer.append(aboutUsImg);
+
     // about us img
-    const aboutUsImg = document.createElement('img');
+    const aboutUsImg = new Image();
+    aboutUsImg.src = AboutUsImg;
     aboutUsImg.setAttribute('id', 'about-us-img');
-    aboutUsImg.src = '/dist/images/pizzeria-header.webp';
     aboutUsContainer.append(aboutUsImg);
 
     // about us header

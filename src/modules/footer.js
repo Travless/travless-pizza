@@ -1,3 +1,7 @@
+import Twitter from '../images/social/icon-twitter.svg';
+import Facebook from '../images/social/icon-facebook.svg';
+import Instagram from '../images/social/icon-instagram.svg';
+
 const footerLoad = () => {
     // footer
     const footer = document.createElement('footer');
@@ -20,22 +24,40 @@ const footerLoad = () => {
     socialMediaLogos.setAttribute('id', 'social-media-logo-container');
     socialMediaContainer.append(socialMediaLogos);
 
+    // // twitter
+    // const twitter = document.createElement('img');
+    // twitter.setAttribute('id', 'twitter');
+    // twitter.src = '/src/images/social/icon-twitter.svg';
+    // socialMediaLogos.append(twitter);
+
     // twitter
-    const twitter = document.createElement('img');
+    const twitter = new Image();
+    twitter.src = Twitter;
     twitter.setAttribute('id', 'twitter');
-    twitter.src = '/dist/images/social/icon-twitter.svg';
     socialMediaLogos.append(twitter);
 
+    // // instagram
+    // const instagram = document.createElement('img');
+    // instagram.setAttribute('id', 'instagram');
+    // instagram.src = '/src/images/social/icon-instagram.svg';
+    // socialMediaLogos.append(instagram);
+
     // instagram
-    const instagram = document.createElement('img');
+    const instagram = new Image();
+    instagram.src = Instagram;
     instagram.setAttribute('id', 'instagram');
-    instagram.src = '/dist/images/social/icon-instagram.svg';
     socialMediaLogos.append(instagram);
 
+    // // facebook
+    // const facebook = document.createElement('img');
+    // facebook.setAttribute('id', 'facebook');
+    // facebook.src = '/src/images/social/icon-facebook.svg';
+    // socialMediaLogos.append(facebook);
+
     // facebook
-    const facebook = document.createElement('img');
+    const facebook = new Image();
+    facebook.src = Facebook;
     facebook.setAttribute('id', 'facebook');
-    facebook.src = '/dist/images/social/icon-facebook.svg';
     socialMediaLogos.append(facebook);
 
     // order online button container
