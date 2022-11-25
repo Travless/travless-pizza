@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: 'header';
-    src: url(/dist/fonts/Growland\ Bold.otf);
+    src: url(./fonts/Growland\ Bold.otf);
 }
 
 @font-face {
     font-family: 'headline-font';
-    src: url(/dist/fonts/Insanibu.ttf);
+    src: url(./fonts/Insanibu.ttf);
 }
 
 @font-face {
     font-family: 'hero-font';
-    src: url(/dist/fonts/steelfish\ rg.otf);
+    src: url(./fonts/steelfish\ rg.otf);
 }
 
 /* media queries */

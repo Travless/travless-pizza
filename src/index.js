@@ -1,3 +1,4 @@
+import './style.css';
 import menuLoad from "./modules/menu";
 import homeLoad from "./modules/home";
 import aboutUsLoad from "./modules/about-us";
